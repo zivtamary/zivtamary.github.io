@@ -61,8 +61,12 @@ background: linear-gradient(to right, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, F
           display: flex;
           justify-content: center;
           li a {
+<<<<<<< HEAD
             color: rgb(209, 209, 209);
             margin: 0px 5px;
+=======
+            color: rgb(94, 94, 94);
+>>>>>>> b3725a6227b95658fbdc4020f9a70696787cb0e0
             font-size: 5rem;
             i.fa-linkedin:hover {
               color: rgb(0, 109, 235);
