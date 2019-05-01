@@ -1,37 +1,49 @@
-/* width */
-::-webkit-scrollbar {
-  width: 12px;
-  background-color: #F5F5F5;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  background-color: #f5f5f5;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #555;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+body {
+  background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body header {
   min-height: 80vh;
 }
 
+body header .header-nav nav {
+  position: fixed;
+  /* Make it stick/fixed */
+  top: 0;
+  /* Stay on top */
+  width: 100%;
+  /* Full width */
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */
+}
+
+body header .header-nav nav .navbar-nav .nav-link {
+  text-transform: capitalize;
+  font-size: 1.2em;
+}
+
 body header .header-body h1 {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 3.5em;
-  margin-top: 8em;
+  font-weight: 600;
+  font-size: 5.5em;
+  margin-top: 4em;
+  background: #fffc00;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#fffc00));
+  background: linear-gradient(to right, #ffffff, #fffc00);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body section#about {
@@ -48,29 +60,31 @@ body section#about .about-body p.typography-subheading {
 
 body section#about .about-body .about-body-social .about-body-social-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body section#about .about-body .about-body-social .about-body-social-list li a {
-  color: #5e5e5e;
+  color: #d1d1d1;
   margin: 0px 5px;
   font-size: 5rem;
 }
 
-body section#about .about-body .about-body-social .about-body-social-list li a i.fa-facebook:hover {
-  color: #00489b;
+body section#about .about-body .about-body-social .about-body-social-list li a i.fa-linkedin:hover {
+  color: #006deb;
   -webkit-transition: red 0.5s ease-out;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
 }
 
 body section#about .about-body .about-body-social .about-body-social-list li a i.fa-github-square:hover {
-  color: #970000;
+  color: #b60000;
   -webkit-transition: red 0.5s ease-out;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;

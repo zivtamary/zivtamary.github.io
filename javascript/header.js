@@ -1,6 +1,7 @@
-// ──────────── Header ──────────────────────────────────────────────────────
+// AOS
+AOS.init();
 
-
+// Header text
 var textRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
