@@ -1,116 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Ziv Tamary - Portfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:200,100,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/daemonite-material@4.1.1/css/material.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <title>Ziv Tamary - Portfolio</title>
-  <!-- Meta -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- CSS -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daemonite-material@4.1.1/css/material.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body class="bg-light-2">
-  <header id="top" class="">
-    <div class="header-nav">
-      <nav id="navbar" class="navbar navbar-expand-lg rounded-bottom navbar-dark rounded-bottom">
+  <body class="bg-dark-2">
+    <header id="top" class="">
+      <div class="header-nav">
+        <nav
+          id="navbar"
+          class="navbar navbar-expand-lg rounded-bottom navbar-dark rounded-bottom bg-dark-2 shadow-lg"
+        >
+          <div class="container">
+            <a class="navbar-brand" href="#"
+              ><img src="./images/logo.png" class="navbar-brand"
+            /></a>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link font-weight-bold" href="#about"
+                    >About <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Technologies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="header-body">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="./images/logo.png" class="navbar-brand" /></a>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link font-weight-bold" href="#about">About <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Technologies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+          <div class="text-center">
+            <h1 class="typography-display-3 text-light">
+              Hey, I'm
+              <span
+                class="text-rotate"
+                data-period="2000"
+                data-rotate='[ "Ziv Tamary.", "a Web Developer.", "from Israel."]'
+              ></span>
+            </h1>
           </div>
         </div>
-      </nav>
-    </div>
-    <div class="header-body">
+      </div>
+    </header>
+    <section id="about" class="bg-light-1 pb-5">
       <div class="container">
-        <div class="text-center">
-          <h1 class="typography-display-3 text-light">
-            Hey, I'm
-            <span class="text-rotate" data-period="2000"
-              data-rotate='[ "Ziv Tamary.", "a Web Developer.", "from Israel."]'></span>
-          </h1>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section id="about" class="bg-light">
-    <div class="container">
-      <div class="about-header">
-        <div class="text-center text-dark-1">
-          <h1 class="typography-display-4 pt-5">ABOUT ME</h1>
-        </div>
-      </div>
-      <div class="about-body">
-        <div class="row no-gutters">
-          <div class="col-sm-6 d-none d-lg-block" data-aos="zoom-in">
-            <img src="./images/about.jpg" class="img-fluid shadow" />
+        <div class="about-header">
+          <div class="header-title text-center text-dark-1">
+            <h1 class="pt-5">ABOUT ME</h1>
           </div>
-          <div class="col-sm-6" data-aos="zoom-in-up">
-            <div class="container">
-              <p class="typography-headline text-center">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
-                sequi quibusdam, sunt ut voluptatum vero quam non iusto fuga
-                quae!
-              </p>
+        </div>
+        <div class="about-body">
+          <div class="row no-gutters">
+            <div class="col-sm-6 d-none d-lg-block" data-aos="zoom-in">
+              <img src="./images/about.jpg" class="img-fluid shadow" />
+            </div>
+            <div class="col-sm-6" data-aos="zoom-in-up">
+              <div class="container">
+                <p class="typography-headline text-center">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nobis sequi quibusdam, sunt ut voluptatum vero quam non iusto
+                  fuga quae!
+                </p>
 
-              <p class="typography-subheading text-center text-justify text-dark-secondary">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus quam fuga commodi ipsa nisi temporibus, delectus
-                iure dolorem itaque. Placeat, doloremque laboriosam? Omnis
-                deleniti earum perferendis architecto impedit incidunt sed aut
-                culpa error eveniet accusamus in cumque corrupti, quis tempora
-                reiciendis sunt qui sit dolores nobis excepturi? Ratione, magni
-                beatae.
-              </p>
-              <div class="about-body-social mx-auto">
+                <p
+                  class="typography-subheading text-center text-justify text-dark-secondary"
+                >
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus quam fuga commodi ipsa nisi temporibus, delectus
+                  iure dolorem itaque. Placeat, doloremque laboriosam? Omnis
+                  deleniti earum perferendis architecto impedit incidunt sed aut
+                  culpa error eveniet accusamus in cumque corrupti, quis tempora
+                  reiciendis sunt qui sit dolores nobis excepturi? Ratione,
+                  magni beatae.
+                </p>
+                <div class="about-body-social mx-auto">
                   <ul class="about-body-social-list ">
                     <li>
-                      <a href="/"><i class="fab fa-github-square" aria-hidden="true"></i></a>
+                      <a href="/"
+                        ><i class="fab fa-github-square" aria-hidden="true"></i
+                      ></a>
                     </li>
                     <li>
-                      <a href="/"><i class="fab fa-linkedin" aria-hidden="true"></i></i></a>
+                      <a href="/"
+                        ><i class="fab fa-linkedin" aria-hidden="true"></i
+                      ></a>
                     </li>
                   </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/daemonite-material@4.1.1/js/material.min.js"></script>
-  <script src="javascript/header.js"></script>
-  <script src="javascript/main.js"></script>
-  <script>
-
-  </script>
-</body>
-
+    </section>
+    <section id="technologies" class="bg-light-1 py-5">
+      <div class="container">
+        <div class="technologies-header pb-5">
+          <div class="header-title text-center text-dark-1">
+            <h1 class="pt-5">TECHNOLOGIES</h1>
+          </div>
+        </div>
+        <div class="technologies-body mt-5">
+          <div class="row my-5">
+            <div class="col-sm-3">
+              <div class="technologies-bar">
+                <i class="text-danger fab fa-html5"></i>
+                <div class="row">
+                  <div class="col-sm-12 mt-2">
+                    <h1>HTML5</h1>
+                    <p class="typography-subheading">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis, necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="technologies-bar">
+                <i class="text-info fab fa-css3"></i>
+                <div class="row">
+                  <div class="col-sm-12 mt-2">
+                    <h1>CSS3</h1>
+                    <p class="typography-subheading">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis, necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="technologies-bar">
+                <i class="text-warning fab fa-js"></i>
+                <div class="row">
+                  <div class="col-sm-12 mt-2">
+                    <h1>JavaScript</h1>
+                    <p class="typography-subheading">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis, necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="technologies-bar">
+                <i class="text-warning fab fa-node-js"></i>
+                <div class="row">
+                  <div class="col-sm-12 mt-2">
+                    <h1>jQuery</h1>
+                    <p class="typography-subheading">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis, necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="technologies-bar">
+                <i class="text-primary fab fa-bootstrap"></i>
+                <div class="row">
+                  <div class="col-sm-12 mt-2">
+                    <h1>Bootstrap</h1>
+                    <p class="typography-subheading">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis, necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="technologies-bar">
+                <i class="text-info fab fa-react"></i>
+                <div class="row">
+                  <div class="col-sm-12 mt-2">
+                    <h1>React.js</h1>
+                    <p class="typography-subheading">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis, necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="technologies-bar">
+                <i class="text-success fab fa-node"></i>
+                <div class="row">
+                  <div class="col-sm-12 mt-2">
+                    <h1>Node.js</h1>
+                    <p class="typography-subheading">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis, necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="technologies-bar">
+                <i class="text-info fas fa-database"></i>
+                <div class="row">
+                  <div class="col-sm-12 mt-2">
+                    <h1>SQL</h1>
+                    <p class="typography-subheading">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Omnis, necessitatibus?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daemonite-material@4.1.1/js/material.min.js"></script>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/main.js"></script>
+    <script></script>
+  </body>
 </html>
