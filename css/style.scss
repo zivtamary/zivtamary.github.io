@@ -10,10 +10,17 @@ body {
       url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
 
+    @media (max-width: 767px){
+
+          background-position: 50% top;
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+
+      }
 
     .header-nav {
       nav {
