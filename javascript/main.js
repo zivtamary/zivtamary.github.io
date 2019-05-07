@@ -1,10 +1,11 @@
-let currentPosition = pageYOffset;
-window.onscroll = () => {
-  let scrollPosition = pageYOffset;
-  if (scrollPosition > currentPosition) {
-    document.getElementById("navbar").style.top = "-50px";
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "0px";
+    document.getElementById("navbar").style.top = "-50px";
+
   }
-  currentPosition = pageYOffset;
-};
+  prevScrollpos = currentScrollPos;
+}
