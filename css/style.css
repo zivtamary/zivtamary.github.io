@@ -16,7 +16,7 @@ body header {
 
 @media (max-width: 768px) {
   body header {
-    background-position: top;
+    background-position-y: -100px;
   }
 }
 
