@@ -1,3 +1,5 @@
+//Navbar hide on scroll
+
 var lastScrollTop = 0;
 $(window).scroll(function(event){
    var st = $(this).scrollTop();
@@ -14,3 +16,9 @@ window.onscroll = () => {
     document.getElementById("navbar").style.top = "0px";
   }
 }
+
+// Smooth Scroll
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});

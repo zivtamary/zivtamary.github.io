@@ -40,24 +40,36 @@
             <a class="navbar-brand" href="#"
               ><img src="./images/logo.png" class="navbar-brand"
             /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <i class="fas fa-bars fa-2x"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link font-weight-bold" href="#about"
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold" data-scroll href="#about"
                     >About <span class="sr-only">(current)</span></a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Technologies</a>
+                  <a class="nav-link" data-scroll href="#technologies"
+                    >Technologies</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
+                  <a class="nav-link" data-scroll href="#portfolio"
+                    >Portfolio</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" data-scroll href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -79,195 +91,203 @@
         </div>
       </div>
     </header>
-    <section id="about" class="bg-light-4 pb-5">
-      <div class="container">
-        <div class="about-header">
-          <div class="header-title text-center text-dark-1">
-            <h1 class="pt-5">ABOUT ME</h1>
-            <h4>Full Stack Web Developer</h4>
-          </div>
-        </div>
-        <div class="about-body" data-aos="fade-up">
-          <div class="row no-gutters">
-            <div class="col-sm-6 d-none d-lg-block">
-              <img src="./images/about.jpg" class="img-fluid shadow" />
+    <div data-spy="scroll" data-target="#navbar" data-offset="0">
+      <section id="about" class="bg-light-4 pb-5">
+        <div class="container">
+          <div class="about-header">
+            <div class="header-title text-center text-dark-1">
+              <h1 class="pt-5">ABOUT ME</h1>
+              <h4>Full Stack Web Developer</h4>
             </div>
-            <div class="col-sm-6">
-              <div class="container">
-                <p class="typography-headline text-center">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nobis sequi quibusdam, sunt ut voluptatum vero quam non iusto
-                  fuga quae!
-                </p>
+          </div>
+          <div class="about-body" data-aos="fade-up">
+            <div class="row no-gutters">
+              <div class="col-sm-6 d-none d-lg-block">
+                <img src="./images/about.jpg" class="img-fluid shadow" />
+              </div>
+              <div class="col-sm-6">
+                <div class="container">
+                  <p class="typography-headline text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nobis sequi quibusdam, sunt ut voluptatum vero quam non
+                    iusto fuga quae!
+                  </p>
 
-                <p
-                  class="typography-subheading text-center text-justify text-dark-secondary"
-                >
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellendus quam fuga commodi ipsa nisi temporibus, delectus
-                  iure dolorem itaque. Placeat, doloremque laboriosam? Omnis
-                  deleniti earum perferendis architecto impedit incidunt sed aut
-                  culpa error eveniet accusamus in cumque corrupti, quis tempora
-                  reiciendis sunt qui sit dolores nobis excepturi? Ratione,
-                  magni beatae.
-                </p>
-                <div class="about-body-social mx-auto">
-                  <ul class="about-body-social-list ">
-                    <li>
-                      <a href="/"
-                        ><i class="fab fa-github-square" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="/"
-                        ><i class="fab fa-linkedin" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="technologies" class="bg-light py-5">
-      <hr style="width:6rem"/>
-      <div class="container">
-        <div class="technologies-header pb-5">
-          <div class="header-title text-center text-dark-1">
-            <h1 class="pt-5">TECHNOLOGIES</h1>
-            <h4>What I can do?</h4>
-          </div>
-        </div>
-        <div class="technologies-body mt-5">
-          <div class="row my-5" data-aos="zoom-in-down">
-            <div class="col-sm-3">
-              <div class="technologies-bar">
-                <i class="text-danger fab fa-html5"></i>
-                <div class="row">
-                  <div class="col-sm-12 mt-2">
-                    <h1>HTML5</h1>
-                    <p class="typography-subheading">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Omnis, necessitatibus?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="technologies-bar">
-                <i class="text-info fab fa-css3"></i>
-                <div class="row">
-                  <div class="col-sm-12 mt-2">
-                    <h1>CSS3</h1>
-                    <p class="typography-subheading">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Omnis, necessitatibus?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="technologies-bar">
-                <i class="text-warning fab fa-js"></i>
-                <div class="row">
-                  <div class="col-sm-12 mt-2">
-                    <h1>JavaScript</h1>
-                    <p class="typography-subheading">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Omnis, necessitatibus?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="technologies-bar">
-                <i class="text-warning fab fa-node-js"></i>
-                <div class="row">
-                  <div class="col-sm-12 mt-2">
-                    <h1>jQuery</h1>
-                    <p class="typography-subheading">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Omnis, necessitatibus?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row" data-aos="zoom-in-down">
-            <div class="col-sm-3">
-              <div class="technologies-bar">
-                <i class="text-primary fab fa-bootstrap"></i>
-                <div class="row">
-                  <div class="col-sm-12 mt-2">
-                    <h1>Bootstrap</h1>
-                    <p class="typography-subheading">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Omnis, necessitatibus?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="technologies-bar">
-                <i class="text-info fab fa-react"></i>
-                <div class="row">
-                  <div class="col-sm-12 mt-2">
-                    <h1>React.js</h1>
-                    <p class="typography-subheading">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Omnis, necessitatibus?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="technologies-bar">
-                <i class="text-success fab fa-node"></i>
-                <div class="row">
-                  <div class="col-sm-12 mt-2">
-                    <h1>Node.js</h1>
-                    <p class="typography-subheading">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Omnis, necessitatibus?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="technologies-bar">
-                <i class="text-info fas fa-database"></i>
-                <div class="row">
-                  <div class="col-sm-12 mt-2">
-                    <h1>SQL</h1>
-                    <p class="typography-subheading">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Omnis, necessitatibus?
-                    </p>
+                  <p
+                    class="typography-subheading text-center text-justify text-dark-secondary"
+                  >
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus quam fuga commodi ipsa nisi temporibus, delectus
+                    iure dolorem itaque. Placeat, doloremque laboriosam? Omnis
+                    deleniti earum perferendis architecto impedit incidunt sed
+                    aut culpa error eveniet accusamus in cumque corrupti, quis
+                    tempora reiciendis sunt qui sit dolores nobis excepturi?
+                    Ratione, magni beatae.
+                  </p>
+                  <div class="about-body-social mx-auto">
+                    <ul class="about-body-social-list ">
+                      <li>
+                        <a href="/"
+                          ><i
+                            class="fab fa-github-square"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="/"
+                          ><i class="fab fa-linkedin" aria-hidden="true"></i
+                        ></a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section id="technologies" class="bg-light py-5">
+        <hr style="width:6rem" />
+        <div class="container">
+          <div class="technologies-header pb-5">
+            <div class="header-title text-center text-dark-1">
+              <h1 class="pt-5">TECHNOLOGIES</h1>
+              <h4>What I can do?</h4>
+            </div>
+          </div>
+          <div class="technologies-body mt-5">
+            <div class="row my-5" data-aos="zoom-in-down">
+              <div class="col-sm-3">
+                <div class="technologies-bar">
+                  <i class="text-danger fab fa-html5"></i>
+                  <div class="row">
+                    <div class="col-sm-12 mt-2">
+                      <h1>HTML5</h1>
+                      <p class="typography-subheading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Omnis, necessitatibus?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="technologies-bar">
+                  <i class="text-info fab fa-css3"></i>
+                  <div class="row">
+                    <div class="col-sm-12 mt-2">
+                      <h1>CSS3</h1>
+                      <p class="typography-subheading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Omnis, necessitatibus?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="technologies-bar">
+                  <i class="text-warning fab fa-js"></i>
+                  <div class="row">
+                    <div class="col-sm-12 mt-2">
+                      <h1>JavaScript</h1>
+                      <p class="typography-subheading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Omnis, necessitatibus?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="technologies-bar">
+                  <i class="text-warning fab fa-node-js"></i>
+                  <div class="row">
+                    <div class="col-sm-12 mt-2">
+                      <h1>jQuery</h1>
+                      <p class="typography-subheading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Omnis, necessitatibus?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-aos="zoom-in-down">
+              <div class="col-sm-3">
+                <div class="technologies-bar">
+                  <i class="text-primary fab fa-bootstrap"></i>
+                  <div class="row">
+                    <div class="col-sm-12 mt-2">
+                      <h1>Bootstrap</h1>
+                      <p class="typography-subheading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Omnis, necessitatibus?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="technologies-bar">
+                  <i class="text-info fab fa-react"></i>
+                  <div class="row">
+                    <div class="col-sm-12 mt-2">
+                      <h1>React.js</h1>
+                      <p class="typography-subheading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Omnis, necessitatibus?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="technologies-bar">
+                  <i class="text-success fab fa-node"></i>
+                  <div class="row">
+                    <div class="col-sm-12 mt-2">
+                      <h1>Node.js</h1>
+                      <p class="typography-subheading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Omnis, necessitatibus?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="technologies-bar">
+                  <i class="text-info fas fa-database"></i>
+                  <div class="row">
+                    <div class="col-sm-12 mt-2">
+                      <h1>SQL</h1>
+                      <p class="typography-subheading">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Omnis, necessitatibus?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/daemonite-material@4.1.1/js/material.min.js"></script>
     <script src="javascript/header.js"></script>
     <script src="javascript/main.js"></script>
-
+    <script>
+    $('body').scrollspy({ target: '#navbar' })
+    </script>
   </body>
 </html>
