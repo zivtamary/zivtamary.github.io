@@ -1,6 +1,8 @@
 //Imports
 @import "scroll";
-@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+$title-font: 'Fjalla One', sans-serif;
 
 body {
   margin: 0;
@@ -68,11 +70,14 @@ body {
           word-wrap: break-word;
         }
         font-size: 4em;
-        font-family: "Permanent Marker", cursive;
+        font-family: $title-font;
       }
     }
     .about-body {
-      margin-top: 8rem;
+      @media (min-width: 768px) {
+        margin-top: 8rem;
+      }
+      margin-top: 3rem;
       p.typography-subheading {
         letter-spacing: 2px;
       }
@@ -116,7 +121,7 @@ body {
             font-size: 3em;
             word-wrap: break-word;
           }
-          font-family: "Permanent Marker", cursive;
+          font-family: $title-font;
           font-size: 4rem;
         }
       }
