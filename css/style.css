@@ -16,9 +16,7 @@ body header {
 
 @media (max-width: 767px) {
   body header {
-    background-position: 50% top;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-position: 25% top;
   }
 }
 
