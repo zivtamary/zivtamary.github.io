@@ -1,8 +1,8 @@
 //Imports
 @import "scroll";
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
 
-$title-font: 'Fjalla One', sans-serif;
+$title-font: "Fjalla One", sans-serif;
 
 body {
   margin: 0;
@@ -16,13 +16,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media (max-width: 767px){
-
-          background-position: 50% top;
-          background-repeat: no-repeat;
-          background-attachment: scroll;
-
-      }
+    @media (max-width: 767px) {
+      background-position: 50% top;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+    }
 
     .header-nav {
       nav {

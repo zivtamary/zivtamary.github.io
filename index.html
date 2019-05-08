@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body class="bg-dark-2">
+  <body class="bg-dark-2" data-spy="scroll" data-target="#navbar" data-offset="0">
     <header id="top">
       <div class="header-nav">
         <nav
@@ -91,7 +91,7 @@
         </div>
       </div>
     </header>
-    <div data-spy="scroll" data-target="#navbar" data-offset="0">
+
       <section id="about" class="bg-light-4 pb-5">
         <div class="container">
           <div class="about-header">
@@ -276,7 +276,7 @@
           </div>
         </div>
       </section>
-    </div>
+
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -287,7 +287,7 @@
     <script src="javascript/header.js"></script>
     <script src="javascript/main.js"></script>
     <script>
-    $('body').scrollspy({ target: '#navbar' })
+      $("body").scrollspy({ target: "#navbar" });
     </script>
   </body>
 </html>
