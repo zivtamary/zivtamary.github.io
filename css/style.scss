@@ -168,6 +168,9 @@ body {
             font-size: 2em;
           }
         }
+        p {
+          padding: 2em 0;
+        }
       }
     }
   }
@@ -229,9 +232,12 @@ body {
         }
       }
       .portfolio-description {
+        text-align: left;
         @media (max-width: 760px) {
-          margin-top: 2em;
-          text-align: center;
+          margin: 2em 0;
+          .portfolio-description-summary {
+            font-size: 1.2em;
+          }
         }
         h1 {
           span {

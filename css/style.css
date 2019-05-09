@@ -196,6 +196,10 @@ body section#technologies .technologies-body .technologies-bar h1 {
   }
 }
 
+body section#technologies .technologies-body .technologies-bar p {
+  padding: 2em 0;
+}
+
 body .divider {
   min-height: 250px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.6))), url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
@@ -262,10 +266,16 @@ body section#portfolio .portfolio-body .portfolio-thumbnail img.coinmaster {
   }
 }
 
+body section#portfolio .portfolio-body .portfolio-description {
+  text-align: left;
+}
+
 @media (max-width: 760px) {
   body section#portfolio .portfolio-body .portfolio-description {
-    margin-top: 2em;
-    text-align: center;
+    margin: 2em 0;
+  }
+  body section#portfolio .portfolio-body .portfolio-description .portfolio-description-summary {
+    font-size: 1.2em;
   }
 }
 
