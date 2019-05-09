@@ -177,7 +177,7 @@ body {
   }
   section#portfolio {
     @media (max-width: 768px) {
-      background-color: white!important;
+      background-color: white !important;
     }
     .portfolio-header {
       .header-title {
@@ -227,7 +227,30 @@ body {
           margin-top: 2em;
           text-align: center;
         }
+        h1 {
+          span {
+            font-size: 50%;
+          }
+        }
       }
     }
+  }
+  .no-js #loader {
+    display: none;
+  }
+  .js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+  }
+  .preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(/images/Preloader_3.gif) center no-repeat #fff;
   }
 }
