@@ -74,6 +74,9 @@ body {
         font-size: 4em;
         font-family: $title-font;
       }
+      h4 {
+        text-transform: uppercase;
+      }
     }
     .about-body {
       @media (min-width: 768px) {
@@ -91,7 +94,7 @@ body {
           margin: 0;
           padding: 0;
           display: flex;
-          justify-content: center;
+          justify-content: flex-start;
           li a {
             margin: 0px 5px;
             font-size: 5rem;
@@ -140,6 +143,9 @@ body {
           font-family: $title-font;
           font-size: 4rem;
         }
+        h4 {
+          text-transform: uppercase;
+        }
       }
     }
     .technologies-body {
@@ -168,14 +174,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    @media (max-width: 767px) {
-      background-position: 50% top;
-      background-repeat: no-repeat;
-      background-attachment: scroll;
-    }
   }
   section#portfolio {
+    @media (max-width: 768px) {
+      background-color: white!important;
+    }
     .portfolio-header {
       .header-title {
         h1 {
@@ -186,6 +189,9 @@ body {
           text-transform: uppercase;
           font-family: $title-font;
           font-size: 4rem;
+        }
+        h4 {
+          text-transform: uppercase;
         }
       }
     }

@@ -92,6 +92,10 @@ body section#about .about-header h1 {
   }
 }
 
+body section#about .about-header h4 {
+  text-transform: uppercase;
+}
+
 body section#about .about-body {
   margin-top: 3rem;
 }
@@ -113,9 +117,9 @@ body section#about .about-body .about-body-social .about-body-social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 body section#about .about-body .about-body-social .about-body-social-list li a {
@@ -164,6 +168,10 @@ body section#technologies .technologies-header .header-title h1 {
   }
 }
 
+body section#technologies .technologies-header .header-title h4 {
+  text-transform: uppercase;
+}
+
 body section#technologies .technologies-body .technologies-bar {
   text-align: center;
 }
@@ -193,11 +201,9 @@ body .divider {
   background-size: cover;
 }
 
-@media (max-width: 767px) {
-  body .divider {
-    background-position: 50% top;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+@media (max-width: 768px) {
+  body section#portfolio {
+    background-color: white !important;
   }
 }
 
@@ -212,6 +218,10 @@ body section#portfolio .portfolio-header .header-title h1 {
     font-size: 3em;
     word-wrap: break-word;
   }
+}
+
+body section#portfolio .portfolio-header .header-title h4 {
+  text-transform: uppercase;
 }
 
 body section#portfolio .portfolio-body .portfolio-thumbnail img.coinmaster {
