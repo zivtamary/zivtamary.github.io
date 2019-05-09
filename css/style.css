@@ -80,6 +80,7 @@ body section#about {
 }
 
 body section#about .about-header h1 {
+  text-transform: uppercase;
   font-size: 4em;
   font-family: "Fjalla One", sans-serif;
 }
@@ -118,13 +119,26 @@ body section#about .about-body .about-body-social .about-body-social-list {
 }
 
 body section#about .about-body .about-body-social .about-body-social-list li a {
-  color: #d1d1d1;
   margin: 0px 5px;
   font-size: 5rem;
 }
 
+body section#about .about-body .about-body-social .about-body-social-list li a i.fa-linkedin {
+  color: #d1d1d1;
+  -webkit-transition: red 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
 body section#about .about-body .about-body-social .about-body-social-list li a i.fa-linkedin:hover {
   color: #006deb;
+  -webkit-transition: red 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  transition: color 0.5s ease-in;
+}
+
+body section#about .about-body .about-body-social .about-body-social-list li a i.fa-github-square {
+  color: #d1d1d1;
   -webkit-transition: red 0.5s ease-out;
   -webkit-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
@@ -132,12 +146,13 @@ body section#about .about-body .about-body-social .about-body-social-list li a i
 
 body section#about .about-body .about-body-social .about-body-social-list li a i.fa-github-square:hover {
   color: #b60000;
-  -webkit-transition: red 0.5s ease-out;
-  -webkit-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
+  -webkit-transition: red 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  transition: color 0.5s ease-in;
 }
 
 body section#technologies .technologies-header .header-title h1 {
+  text-transform: uppercase;
   font-family: "Fjalla One", sans-serif;
   font-size: 4rem;
 }
@@ -159,5 +174,50 @@ body section#technologies .technologies-body .technologies-bar i {
 
 body section#technologies .technologies-body .technologies-bar h1 {
   font-family: Raleway;
+}
+
+@media (max-width: 768px) {
+  body section#technologies .technologies-body .technologies-bar h1 {
+    font-size: 2em;
+  }
+}
+
+body .divider {
+  min-height: 250px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.6))), url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  body .divider {
+    background-position: 50% top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+}
+
+body section#portfolio .portfolio-header .header-title h1 {
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  body section#portfolio .portfolio-header .header-title h1 {
+    font-size: 3em;
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 760px) {
+  body section#portfolio .portfolio-body .portfolio-description {
+    margin-top: 2em;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

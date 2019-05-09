@@ -70,6 +70,7 @@ body {
           font-size: 4em;
           word-wrap: break-word;
         }
+        text-transform: uppercase;
         font-size: 4em;
         font-family: $title-font;
       }
@@ -92,22 +93,35 @@ body {
           display: flex;
           justify-content: center;
           li a {
-            color: rgb(209, 209, 209);
             margin: 0px 5px;
             font-size: 5rem;
-            i.fa-linkedin:hover {
-              color: rgb(0, 109, 235);
+            i.fa-linkedin {
+              color: rgb(209, 209, 209);
               -webkit-transition: red 0.5s ease-out;
               -moz-transition: red 0.5s ease-out;
               -o-transition: red 0.5s ease-out;
               transition: color 0.5s ease-out;
+              &:hover {
+                color: rgb(0, 109, 235);
+                -webkit-transition: red 0.5s ease-in;
+                -moz-transition: red 0.5s ease-in;
+                -o-transition: red 0.5s ease-in;
+                transition: color 0.5s ease-in;
+              }
             }
-            i.fa-github-square:hover {
-              color: rgb(182, 0, 0);
+            i.fa-github-square {
+              color: rgb(209, 209, 209);
               -webkit-transition: red 0.5s ease-out;
               -moz-transition: red 0.5s ease-out;
               -o-transition: red 0.5s ease-out;
               transition: color 0.5s ease-out;
+              &:hover {
+                color: rgb(182, 0, 0);
+                -webkit-transition: red 0.5s ease-in;
+                -moz-transition: red 0.5s ease-in;
+                -o-transition: red 0.5s ease-in;
+                transition: color 0.5s ease-in;
+              }
             }
           }
         }
@@ -122,6 +136,7 @@ body {
             font-size: 3em;
             word-wrap: break-word;
           }
+          text-transform: uppercase;
           font-family: $title-font;
           font-size: 4rem;
         }
@@ -135,6 +150,52 @@ body {
         }
         h1 {
           font-family: Raleway;
+        }
+        @media (max-width: 768px) {
+          h1 {
+            font-size: 2em;
+          }
+        }
+      }
+    }
+  }
+  .divider {
+    min-height: 250px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+      url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 767px) {
+      background-position: 50% top;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+    }
+  }
+  section#portfolio {
+    .portfolio-header {
+      .header-title {
+        h1 {
+          @media (max-width: 768px) {
+            font-size: 3em;
+            word-wrap: break-word;
+          }
+          text-transform: uppercase;
+          font-family: $title-font;
+          font-size: 4rem;
+        }
+      }
+    }
+    .portfolio-body {
+      .portfolio-thumbnail {
+      }
+      .portfolio-description {
+        @media (max-width: 760px) {
+          margin-top: 2em;
+          text-align: center;
         }
       }
     }
