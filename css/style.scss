@@ -82,12 +82,18 @@ body {
       @media (min-width: 768px) {
         margin-top: 8rem;
       }
+      @media (max-width: 768px) {
+        .about-body-title {
+          font-size: 150%;
+        }
+      }
       margin-top: 3rem;
       p.typography-subheading {
         letter-spacing: 2px;
       }
       img {
       }
+      
       .about-body-social {
         .about-body-social-list {
           list-style: none;

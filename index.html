@@ -133,22 +133,20 @@
             </div>
             <div class="col-sm-6">
               <div class="container">
-                <p class="typography-headline text-left">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nobis sequi quibusdam, sunt ut voluptatum vero quam non iusto
-                  fuga quae!
+                <p class="about-body-title typography-display-1 text-left">
+                  { Ziv Tamary, nice to meet! }
                 </p>
 
                 <p
                   class="typography-subheading text-left text-justify text-dark-secondary"
                 >
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellendus quam fuga commodi ipsa nisi temporibus, delectus
-                  iure dolorem itaque. Placeat, doloremque laboriosam? Omnis
-                  deleniti earum perferendis architecto impedit incidunt sed aut
-                  culpa error eveniet accusamus in cumque corrupti, quis tempora
-                  reiciendis sunt qui sit dolores nobis excepturi? Ratione,
-                  magni beatae.
+                  I am Junior Full stack Web Developer able to build a Web presence from
+                  the ground up - from concept, navigation, layout and
+                  programming. Skilled at writing well-designed,
+                  testable and efficient code using current best practices and latest technology in
+                  Web development. Fast learner, hard worker, passionate and team player who
+                  is proficient in an array of scripting languages and
+                  multimedia Web tools. I am currently looking for a job to increase my skills as a Web Developer.
                 </p>
                 <div class="about-body-social">
                   <ul class="about-body-social-list ">
@@ -304,7 +302,7 @@
       <div class="container">
         <div class="portfolio-header">
           <div class="header-title text-center text-dark-1 pb-5">
-            <h1>portfolio<span class="text-secondary">:)</span></h1>
+            <h1>portfolio</h1>
             <h4>work i have done</h4>
           </div>
         </div>
@@ -322,7 +320,7 @@
             <div class="col-sm-12 col-md-6 portfolio-description">
               <h1 class="typography-display-1">
                 Travel Agency
-                <span class="badge badge-secondary">React.js</span>
+                <span class="badge badge-dark">React.js</span>
               </h1>
               <p class="typography-subheading">
                 <strong>Technologies:</strong> HTML5, CSS3, Sass, JavaScript,
@@ -369,7 +367,11 @@
         </div>
       </div>
     </section>
-    <footer id="contact"></footer>
+    <footer id="contact " class="bg-light d-none">
+      <div class="text-center">
+        <h1>contact</h1>
+      </div>
+    </footer>
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
@@ -383,7 +385,7 @@
     <script>
       // Wait for window load
       $(window).on("load", () => {
-        $('.preloader').fadeOut('slow')
+        $(".preloader").fadeOut("slow");
       });
       $("body").scrollspy({ target: "#navbar" });
     </script>

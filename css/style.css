@@ -106,6 +106,12 @@ body section#about .about-body {
   }
 }
 
+@media (max-width: 768px) {
+  body section#about .about-body .about-body-title {
+    font-size: 150%;
+  }
+}
+
 body section#about .about-body p.typography-subheading {
   letter-spacing: 2px;
 }
