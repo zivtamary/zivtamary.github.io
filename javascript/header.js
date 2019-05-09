@@ -1,7 +1,7 @@
 // AOS
 AOS.init();
 
-// Header Hero Text
+// Header hero text
 var textRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;

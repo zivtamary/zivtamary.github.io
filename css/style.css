@@ -214,6 +214,38 @@ body section#portfolio .portfolio-header .header-title h1 {
   }
 }
 
+body section#portfolio .portfolio-body .portfolio-thumbnail img.coinmaster {
+  -webkit-animation: mover 1.2s infinite alternate;
+  animation: mover 1.2s infinite alternate;
+}
+
+body section#portfolio .portfolio-body .portfolio-thumbnail img.coinmaster {
+  -webkit-animation: mover 1.2s infinite alternate;
+  animation: mover 1.2s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
 @media (max-width: 760px) {
   body section#portfolio .portfolio-body .portfolio-description {
     margin-top: 2em;
