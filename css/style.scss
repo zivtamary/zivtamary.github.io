@@ -234,6 +234,13 @@ body {
       .portfolio-description {
         text-align: left;
         @media (max-width: 760px) {
+          h1 {
+            font-size: 1.5rem;
+            padding-top: 1em;
+          }
+          p:first-of-type {
+           font-size: 50%;
+          }
           margin: 2em 0;
           .portfolio-description-summary {
             font-size: 1.2em;

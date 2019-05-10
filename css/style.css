@@ -274,6 +274,13 @@ body section#portfolio .portfolio-body .portfolio-description {
   body section#portfolio .portfolio-body .portfolio-description {
     margin: 2em 0;
   }
+  body section#portfolio .portfolio-body .portfolio-description h1 {
+    font-size: 1.5rem;
+    padding-top: 1em;
+  }
+  body section#portfolio .portfolio-body .portfolio-description p:first-of-type {
+    font-size: 50%;
+  }
   body section#portfolio .portfolio-body .portfolio-description .portfolio-description-summary {
     font-size: 1.2em;
   }
