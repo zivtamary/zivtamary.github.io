@@ -279,7 +279,7 @@ body section#portfolio .portfolio-body .portfolio-description {
     padding-top: 1em;
   }
   body section#portfolio .portfolio-body .portfolio-description p:first-of-type {
-    font-size: 50%;
+    font-size: 1em;
   }
   body section#portfolio .portfolio-body .portfolio-description .portfolio-description-summary {
     font-size: 1.2em;
