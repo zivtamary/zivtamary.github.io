@@ -35,6 +35,11 @@ body header .header-nav nav {
   /* Transition effect when sliding down (and up) */
 }
 
+body header .header-nav nav a.navbar-brand {
+  pointer-events: none;
+  cursor: default;
+}
+
 body header .header-nav nav .navbar-nav .nav-link {
   text-transform: uppercase;
   font-size: 1.2em;
