@@ -61,6 +61,10 @@ body header .header-body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 body header .header-body h1 {
@@ -121,49 +125,9 @@ body section#about .about-body p.typography-subheading {
   letter-spacing: 2px;
 }
 
-body section#about .about-body .about-body-social .about-body-social-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-body section#about .about-body .about-body-social .about-body-social-list li a {
-  margin: 0px 5px;
-  font-size: 5rem;
-}
-
-body section#about .about-body .about-body-social .about-body-social-list li a i.fa-linkedin {
-  color: #d1d1d1;
-  -webkit-transition: red 0.5s ease-out;
-  -webkit-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
-}
-
-body section#about .about-body .about-body-social .about-body-social-list li a i.fa-linkedin:hover {
-  color: #006deb;
-  -webkit-transition: red 0.5s ease-in;
-  -webkit-transition: color 0.5s ease-in;
-  transition: color 0.5s ease-in;
-}
-
-body section#about .about-body .about-body-social .about-body-social-list li a i.fa-github-square {
-  color: #d1d1d1;
-  -webkit-transition: red 0.5s ease-out;
-  -webkit-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
-}
-
-body section#about .about-body .about-body-social .about-body-social-list li a i.fa-github-square:hover {
-  color: #b60000;
-  -webkit-transition: red 0.5s ease-in;
-  -webkit-transition: color 0.5s ease-in;
-  transition: color 0.5s ease-in;
+body section#about .about-body img {
+  pointer-events: none;
+  cursor: default;
 }
 
 body section#technologies .technologies-header .header-title h1 {
@@ -293,6 +257,38 @@ body section#portfolio .portfolio-body .portfolio-description {
 
 body section#portfolio .portfolio-body .portfolio-description h1 span {
   font-size: 50%;
+}
+
+body footer#contact .social {
+  font-size: 3em;
+}
+
+body footer#contact .social i.fa-linkedin {
+  color: #d1d1d1;
+  -webkit-transition: red 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+body footer#contact .social i.fa-linkedin:hover {
+  color: #006deb;
+  -webkit-transition: red 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  transition: color 0.5s ease-in;
+}
+
+body footer#contact .social i.fa-github-square {
+  color: #d1d1d1;
+  -webkit-transition: red 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+body footer#contact .social i.fa-github-square:hover {
+  color: #b60000;
+  -webkit-transition: red 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  transition: color 0.5s ease-in;
 }
 
 body .no-js #loader {

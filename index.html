@@ -66,15 +66,13 @@
             /></a>
             <button
               class="navbar-toggler"
+              data-target="#navdrawerDefault"
+              data-toggle="navdrawer"
               type="button"
-              data-toggle="collapse"
-              data-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
             >
               <i class="fas fa-bars fa-2x"></i>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -100,6 +98,28 @@
           </div>
         </nav>
       </div>
+      <!-- <Navbar Mobile> -->
+      <div
+        aria-hidden="true"
+        class="navdrawer"
+        id="navdrawerDefault"
+        tabindex="-1"
+      >
+        <div class="navdrawer-content">
+          <div class="navdrawer-header">
+            <a class="navbar-brand px-0" href="#">Navigation</a>
+          </div>
+          <nav class="navdrawer-nav">
+            <a class="nav-item nav-link" href="#about">About me</a>
+            <a class="nav-item nav-link" href="#technologies">Technologies</a>
+            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-item nav-link" href="#about">Contact</a>
+          </nav>
+          <div class="navdrawer-divider"></div>
+          <p class="text-center font-weight-bold">Ziv Tamary ©</p>
+        </div>
+      </div>
+      <!-- </Navbar Mobile> -->
       <div class="header-body">
         <div class="container">
           <div class="text-center">
@@ -126,7 +146,7 @@
             <h4>full stack web developer</h4>
           </div>
         </div>
-        <div class="about-body" data-aos="fade-up">
+        <div class="about-body my-5" data-aos="fade-up">
           <div class="row">
             <div class="col-sm-6 d-none d-md-block">
               <img src="./images/about.jpg" class="img-fluid shadow rounded" />
@@ -149,20 +169,24 @@
                   scripting languages and multimedia Web tools. I am currently
                   looking for a job to increase my skills as a Web Developer.
                 </p>
-                <div class="about-body-social">
-                  <ul class="about-body-social-list ">
-                    <li>
-                      <a href="/"
-                        ><i class="fab fa-github-square" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="/"
-                        ><i class="fab fa-linkedin" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
+                <!-- <span class="badge badge-pill badge-dark">GITHUB	&nbsp;<i class="fab fa-github" aria-hidden="true"></i
+                  ></span> -->
+
+                <a
+                  href="https://github.com/zivtamary"
+                  target="_blank"
+                  class="chip chip-action bg-dark text-light font-weight-bold"
+                  >Github &nbsp;<i class="fab fa-github" aria-hidden="true"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/zivtamary"
+                  target="_blank"
+                  class="chip chip-action bg-dark text-light font-weight-bold"
+                  >LinkedIn &nbsp;<i
+                    class="fab fa-linkedin"
+                    aria-hidden="true"
+                  ></i
+                ></a>
               </div>
             </div>
           </div>
@@ -311,7 +335,9 @@
 
         <div class="portfolio-body">
           <div class="row py-5" data-aos="fade-up" data-aos-duration="2000">
-            <div class="col-sm-12 col-md-6 portfolio-thumbnail order-sm-1 order-md-2">
+            <div
+              class="col-sm-12 col-md-6 portfolio-thumbnail order-sm-1 order-md-2"
+            >
               <img
                 src="/images/mockup_3.png"
                 class="img-fluid"
@@ -332,21 +358,41 @@
                 <div class="card shadow-none">
                   <div id="headingThree">
                     <h5 class="mb-0">
-                      <button class="d-md-none btn btn-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      <button
+                        class="d-md-none btn btn-dark btn-block"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="true"
+                        aria-controls="collapseThree"
+                      >
                         MORE INFO
                       </button>
                     </h5>
                   </div>
-              
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionThree">
+
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionThree"
+                  >
                     <div class="card-body text-left typography-body-2">
-                      Built with React and Google Firebase along with Redux. This app lets you track issues of your company's product. It has closed membership system, issue tracker, and notifications upon issue changes and updates.
+                      Built with React and Google Firebase along with Redux.
+                      This app lets you track issues of your company's product.
+                      It has closed membership system, issue tracker, and
+                      notifications upon issue changes and updates.
                     </div>
                   </div>
                 </div>
-            </div>
-              <p class="d-none d-md-block typography-headline portfolio-description-summary">
-                Built with React and Google Firebase along with Redux. This app lets you track issues of your company's product. It has closed membership system, issue tracker, and notifications upon issue changes and updates.
+              </div>
+              <p
+                class="d-none d-md-block typography-headline portfolio-description-summary"
+              >
+                Built with React and Google Firebase along with Redux. This app
+                lets you track issues of your company's product. It has closed
+                membership system, issue tracker, and notifications upon issue
+                changes and updates.
               </p>
             </div>
           </div>
@@ -372,24 +418,38 @@
                 <div class="card shadow-none">
                   <div id="headingOne">
                     <h5 class="mb-0">
-                      <button class="d-md-none btn btn-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <button
+                        class="d-md-none btn btn-dark btn-block"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
                         MORE INFO
                       </button>
                     </h5>
                   </div>
-              
-                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionOne">
+
+                  <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionOne"
+                  >
                     <div class="card-body text-left typography-body-2">
-                      Search for vacations, get live price updates upon change, and
-                      also favorite any vacation you like to check it later quickly
-                      and easy. Login and register system is included, with an admin
-                      panel to check vacations view statistics and option to edit nor
-                      delete a vacation.
+                      Search for vacations, get live price updates upon change,
+                      and also favorite any vacation you like to check it later
+                      quickly and easy. Login and register system is included,
+                      with an admin panel to check vacations view statistics and
+                      option to edit nor delete a vacation.
                     </div>
                   </div>
                 </div>
-            </div>
-              <p class="d-none d-md-block typography-headline portfolio-description-summary">
+              </div>
+              <p
+                class="d-none d-md-block typography-headline portfolio-description-summary"
+              >
                 Search for vacations, get live price updates upon change, and
                 also favorite any vacation you like to check it later quickly
                 and easy. Login and register system is included, with an admin
@@ -424,22 +484,34 @@
                 <div class="card shadow-none">
                   <div id="headingTwo">
                     <h5 class="mb-0">
-                      <button class="d-md-none btn btn-dark btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      <button
+                        class="d-md-none btn btn-dark btn-block"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="collapseTwo"
+                      >
                         MORE INFO
                       </button>
                     </h5>
                   </div>
-              
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTwo">
+
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionTwo"
+                  >
                     <div class="card-body text-left typography-body-2">
-                      The Cryptocurrency market is growing every day. view more than
-                      hundread different crypto coins, get live market prices, and
-                      also my special tool to analyze coin movements or compare five
-                      different coins in an updating graph!
+                      The Cryptocurrency market is growing every day. view more
+                      than hundread different crypto coins, get live market
+                      prices, and also my special tool to analyze coin movements
+                      or compare five different coins in an updating graph!
                     </div>
                   </div>
                 </div>
-            </div>
+              </div>
               <p
                 class="d-none d-md-block typography-headline portfolio-description-summary"
               >
@@ -453,11 +525,26 @@
         </div>
       </div>
     </section>
-    <footer id="contact " class="bg-light d-none">
-      <div class="text-center">
-        <h1>contact</h1>
+    <footer id="contact" class="bg-dark-2 pt-3">
+      <div class="container text-center">
+        <p class="typography-subheading text-light">
+          Ziv Tamary ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+
+        <div class="social">
+          <a href="https://github.com/zivtamary"
+            ><i class="fab fa-github-square" aria-hidden="true"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/zivtamary/"
+            ><i class="fab fa-linkedin" aria-hidden="true"></i
+          ></a>
+        </div>
       </div>
     </footer>
+
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
@@ -474,6 +561,7 @@
         $(".preloader").fadeOut("slow");
       });
       $("body").scrollspy({ target: "#navbar" });
+      $("#navdrawerDefault").navdrawer("hide");
     </script>
   </body>
 </html>
