@@ -203,6 +203,11 @@ body section#portfolio .portfolio-header .header-title h4 {
   text-transform: uppercase;
 }
 
+body section#portfolio .portfolio-body .portfolio-thumbnail img {
+  pointer-events: none;
+  cursor: default;
+}
+
 body section#portfolio .portfolio-body .portfolio-thumbnail img.coinmaster {
   -webkit-animation: mover 1.2s infinite alternate;
   animation: mover 1.2s infinite alternate;
